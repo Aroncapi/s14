@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', cursive;
+    background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #c44569;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.corazon {
+    font-size: 100px;
+    animation: latido 1s infinite;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.botones {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#btnSi {
+    background: #c44569;
+    color: white;
+}
+
+#btnNo {
+    background: #e66767;
+    color: white;
+    position: relative;
+}
+
+#mensajeFinal {
+    display: none;
+    font-size: 1.5em;
+    color: #c44569;
+    margin-top: 20px;
+}
+
+@keyframes latido {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.regalo {
+    width: 100px;
+    margin: 20px auto;
+    animation: flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
